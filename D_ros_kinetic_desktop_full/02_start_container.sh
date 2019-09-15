@@ -15,5 +15,5 @@ docker run -it \
     -env="XAUTHORITY=$XAUTH" \
     --volume="$XAUTH:$XAUTH" \
     --runtime=nvidia \
-    ros_turtlebot_nvidia:latest \
+    pxl_ra_ros_kinetic_desktop_full:latest \
     bash

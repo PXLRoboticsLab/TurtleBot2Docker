@@ -7,6 +7,7 @@ RUN set -x \
         && apt-get update \
         && apt-get upgrade -y \
         && apt-get install -y apt-transport-https ca-certificates \
+        && apt-get install -y openssh-server \
         && apt-get install -y git vim htop sudo curl wget \
         && apt-get install -y bash-completion \
         && rm -rf /var/lib/apt/lists/*
@@ -85,4 +86,4 @@ COPY --chown=user:user ./.tmux.conf /home/user/.tmux.conf
 STOPSIGNAL SIGTERM
 
 ENTRYPOINT ["/scripts/init_commands.sh"]
-CMD /bin/bash
+CMD sudo service ssh start && /bin/bash
