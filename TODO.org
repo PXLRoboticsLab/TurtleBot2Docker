@@ -1,0 +1,4 @@
+* TODO Create all run scripts with if tests
+* TODO Create AR.Drone docker
+* TODO Test multi turtlebot2
+* TODO Write documentation
