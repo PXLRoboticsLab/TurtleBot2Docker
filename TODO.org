@@ -1,4 +1,3 @@
 * DONE Create all run scripts with if tests
 * DONE src volume
-* TODO Test multi turtlebot2
 * TODO Write documentation
