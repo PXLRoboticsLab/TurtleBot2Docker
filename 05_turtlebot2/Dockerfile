@@ -22,7 +22,6 @@ RUN apt-get install -y libssl-dev libssl-doc libusb-1.0-0 libusb-1.0-0-dev libus
 # modify librealsense deb (unpack, replace script, repack)
 RUN apt-get download ros-kinetic-librealsense
 RUN dpkg-deb -R ros-kinetic-librealsense*.deb ros-rslib/
-#RUN wget https://gist.githubusercontent.com/dizz/404ef259a15e1410d692792da0c27a47/raw/3769e80a051b5f2ce2a08d4ee6f79c766724f495/postinst
 COPY postinst postinst
 RUN chmod +x postinst
 RUN cp postinst ros-rslib/DEBIAN
