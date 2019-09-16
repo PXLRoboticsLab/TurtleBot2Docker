@@ -1,3 +1,5 @@
+#!/bin/bash
+
 vendor=`glxinfo | grep vendor | grep OpenGL | awk '{ print $4 }'`
 
 if [ $vendor == "NVIDIA" ]; then
