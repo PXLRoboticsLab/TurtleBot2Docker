@@ -1,3 +1,0 @@
-* DONE Create all run scripts with if tests
-* DONE src volume
-* TODO Write documentation
