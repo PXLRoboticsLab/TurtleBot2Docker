@@ -5,7 +5,7 @@ vendor=`glxinfo | grep vendor | grep OpenGL | awk '{ print $4 }'`
 if [ $vendor == "NVIDIA" ]; then
     (cd ./01a_nvidia_opengl_cuda; ./01_build_image.sh)
 else
-    (cd ./01b_opengel_direct_rendering; ./01_build_image.sh)
+    (cd ./01b_opengl_direct_rendering; ./01_build_image.sh)
 fi
 
 (cd ./02_ros_kinetic_base; ./01_build_image.sh)
