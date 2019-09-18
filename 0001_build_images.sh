@@ -13,3 +13,4 @@ fi
 (cd ./04_ros_kinetic_desktop_full; ./01_build_image.sh)
 (cd ./05_turtlebot2; ./01_build_image.sh)
 (cd ./06_turtlebot2_with_extra_packages; ./01_build_image.sh)
+(cd ./07_ar_drone; ./01_build_image.sh)
