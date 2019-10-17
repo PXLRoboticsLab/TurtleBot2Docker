@@ -64,6 +64,8 @@ RUN echo LS_COLORS=$LS_COLORS:\'di=1\;33:ln=36\' >> ~/.bashrc \
 && echo export LS_COLORS >> ~/.bashrc \
 && touch ~/.sudo_as_admin_successful # To surpress the sudo message at run.
 
+RUN echo "export QT_X11_NO_MITSHM=1" >> ~/.bashrc
+
 STOPSIGNAL SIGTERM
 
 ENTRYPOINT ["/scripts/init_commands.sh"]
