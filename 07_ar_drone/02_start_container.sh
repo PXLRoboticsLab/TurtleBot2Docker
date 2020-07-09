@@ -18,7 +18,7 @@ if [ $vendor == "NVIDIA" ]; then
         --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
         -env="XAUTHORITY=$XAUTH" \
         --volume="$XAUTH:$XAUTH" \
-        --runtime=nvidia \
+        --gpus all \
         pxl_ra_ros_kinetic_ar_drone2:latest \
         bash
 else
